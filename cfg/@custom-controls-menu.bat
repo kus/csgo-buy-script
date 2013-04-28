@@ -36,7 +36,7 @@ IF %errorlevel% == 0 (
 	CLS
 	ECHO Custom control menu set!
 	ECHO Please go into CS:GO and set your controls.
-	ECHO Once you have set your controls, go back to the start screen of CS:GO and alt tab and come back and run this script to restore the default %mouse_keyboard_options% so you can play on servers that have sv_pure 1 or above!
+	ECHO Once you have set your controls, exit CS:GO and run this script to restore the default %mouse_keyboard_options% so you can play on servers that have sv_pure 1 or above!
 )
 :END
 pause

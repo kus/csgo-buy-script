@@ -10,7 +10,7 @@ Gives you "one click binds" to buy weapons/equipment or use radio commands, and 
 
 ## Important
 
-Due to most servers on CS:GO using the command `sv_pure 1` the file `mouse_keyboard_options.txt` that is customised to allow you to bind your controls through the control screen is flagged if it not the standard file, so you need to use the custom file and bind your controls then change it back to the standard file. For Windows users I have created batch file `@custom-controls-menu.bat` that does this for you in the `cfg` folder. All you simply do is when you install the script, run `@custom-controls-menu.bat` in the `cfg` folder go into CS:GO, bind your controls, alt tab back out and run the script `@custom-controls-menu.bat` again and it restores the original `mouse_keyboard_options.txt` file and away you go!
+Due to most servers on CS:GO using the command `sv_pure 1` the file `mouse_keyboard_options.txt` that is customised to allow you to bind your controls through the control screen is flagged if it not the standard file, so you need to use the custom file and bind your controls then change it back to the standard file. For Windows users I have created batch file `@custom-controls-menu.bat` that does this for you in the `cfg` folder. All you simply do is when you install the script, run `@custom-controls-menu.bat` in the `cfg` folder go into CS:GO, bind your controls, exit CS:GO and run the script `@custom-controls-menu.bat` again and it restores the original `mouse_keyboard_options.txt` file and away you go!
 
 ## Installation
 
@@ -19,8 +19,8 @@ Due to most servers on CS:GO using the command `sv_pure 1` the file `mouse_keybo
 1. Extract the zip to your `Counter-Strike Global Offensive\csgo` folder, generally something like `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo`
 - Run `@custom-controls-menu.bat` in the `Counter-Strike Global Offensive\csgo\cfg` folder to setup the custom controls menu
 - Bind your controls
-- Exit to the main CS:GO screen
-- Alt tab and run `@custom-controls-menu.bat` in the `cfg` folder again to restore the standard controls menu
+- Exit CS:GO (I have found that alt-tabing can cause the server to still kick you for sv_pure 1, so best to exit and restart CS:GO)
+- Run `@custom-controls-menu.bat` in the `cfg` folder again to restore the standard controls menu
 
 If you want to change your binds later on, simply repeat Step 2 onwards again.
 
@@ -30,7 +30,7 @@ If you want to change your binds later on, simply repeat Step 2 onwards again.
 - Copy `mouse_keyboard_options.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options_ORIGINAL.txt`, overwrite if prompted
 - Copy `mouse_keyboard_options_KUS.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options.txt`, overwrite if prompted
 - Bind your controls
-- Exit CS:GO
+- Exit CS:GO (I have found that alt-tabing can cause the server to still kick you for sv_pure 1, so best to exit and restart CS:GO)
 - Copy `mouse_keyboard_options_ORIGINAL.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options.txt`, overwrite if prompted
 
 If you want to change your binds later on, simply repeat Step 2 onwards again.
