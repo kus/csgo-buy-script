@@ -4,6 +4,10 @@
 
 Gives you "one click binds" to buy weapons/equipment or use radio commands, and allows you to set the binds up through CS:GO controls menu so you don't have to manually edit your config.cfg or bind them through console. It works the same way most buy scripts worked on CS1.6 and CS:S where you could bind them through the controls screen.
 
+![Custom controls menu](https://raw.github.com/kus/csgo-buy-script/master/screenshots/custom-controls-menu.jpg "Custom controls menu")
+
+![Bind through GUI](https://raw.github.com/kus/csgo-buy-script/master/screenshots/bind-through-gui.jpg "Bind through GUI")
+
 ## Important
 
 Due to most servers on CS:GO using the command `sv_pure 1` the file `mouse_keyboard_options.txt` that is customised to allow you to bind your controls through the control screen is flagged if it not the standard file, so you need to use the custom file and bind your controls then change it back to the standard file. For Windows users I have created batch file `@custom-controls-menu.bat` that does this for you in the `cfg` folder. All you simply do is when you install the script, run `@custom-controls-menu.bat` in the `cfg` folder go into CS:GO, bind your controls, alt tab back out and run the script `@custom-controls-menu.bat` again and it restores the original `mouse_keyboard_options.txt` file and away you go!
