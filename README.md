@@ -16,7 +16,7 @@ Due to most servers on CS:GO using the command `sv_pure 1` the file `mouse_keybo
 
 ### Windows
 
-1. Extract the zip to your `Counter-Strike Global Offensive\csgo` folder, generally something like `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo`
+1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip) and extract the contents of the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive\csgo` folder, generally something like `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo`
 - Run `@custom-controls-menu.bat` in the `Counter-Strike Global Offensive\csgo\cfg` folder to setup the custom controls menu
 - Bind your controls
 - Exit CS:GO (I have found that alt-tabing can cause the server to still kick you for sv_pure 1, so best to exit and restart CS:GO)
@@ -26,7 +26,7 @@ If you want to change your binds later on, simply repeat Step 2 onwards again.
 
 ### Mac/Linux
 
-1. Extract the zip to your `Counter-Strike Global Offensive/csgo` folder, generally something like `~/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo`
+1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip) and extract the contents of the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive/csgo` folder, generally something like `~/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo`
 - Copy `mouse_keyboard_options.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options_ORIGINAL.txt`, overwrite if prompted
 - Copy `mouse_keyboard_options_KUS.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options.txt`, overwrite if prompted
 - Bind your controls
