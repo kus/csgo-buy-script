@@ -533,7 +533,7 @@
 		"devonly"		"1"
 	}
 
-	// Kus' Counter-Strike: Global Offensive Script v0.1
+	// Kus' Counter-Strike: Global Offensive Script v0.2
 	// http://blakek.us
 	// Twitter: @blakekus
 	// Contribute on github: http://github.com/kus/csgo-buy-script
@@ -542,7 +542,7 @@
 	"blank"
 	{
 		"control"		"1"
-		"name"			"== Kus' CSGO Script v0.1 =="
+		"name"			"== Kus' CSGO Script v0.2 =="
 		"convar"		""
 		"priority"		"1"
 		"type"			"choice"
@@ -869,12 +869,21 @@
 		"type"			"bind"
 	}
 
+	"Affordable Kevlar Vest"
+	{
+		"control"		"1"
+		"name"			"		Buy Kevlar + Helmet, fallback Kevlar Vest"
+		"command"		"buyarmor"
+		"priority"		"4161"
+		"type"			"bind"
+	}
+
 	"Kevlar Vest"
 	{
 		"control"		"1"
 		"name"			"		Buy Kevlar Vest"
 		"command"		"buykevlar"
-		"priority"		"4161"
+		"priority"		"4162"
 		"type"			"bind"
 	}
 
@@ -883,7 +892,7 @@
 		"control"		"1"
 		"name"			"		Buy Kevlar + Helmet"
 		"command"		"buyassaultsuit"
-		"priority"		"4162"
+		"priority"		"4163"
 		"type"			"bind"
 	}
 
@@ -892,7 +901,7 @@
 		"control"		"1"
 		"name"			"		Buy Zeus x27 (taser)"
 		"command"		"buytaser"
-		"priority"		"4163"
+		"priority"		"4164"
 		"type"			"bind"
 	}
 
@@ -901,7 +910,7 @@
 		"control"		"1"
 		"name"			"		Buy Defuse Kit / Rescue Kit"
 		"command"		"buykit"
-		"priority"		"4164"
+		"priority"		"4165"
 		"type"			"bind"
 	}
 	
@@ -910,7 +919,7 @@
 		"control"		"1"
 		"name"			"		Buy Primary ammo"
 		"command"		"buyprimammo"
-		"priority"		"4165"
+		"priority"		"4166"
 		"type"			"bind"
 	}
 	
@@ -919,7 +928,7 @@
 		"control"		"1"
 		"name"			"		Buy Secondary ammo"
 		"command"		"buysecammo"
-		"priority"		"4166"
+		"priority"		"4167"
 		"type"			"bind"
 	}
 	

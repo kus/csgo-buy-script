@@ -1,4 +1,4 @@
-# Kus' Counter-Strike: Global Offensive Buy Script
+# Kus' Counter-Strike: Global Offensive Buy Script v0.2
 
 ## What does it do?
 
@@ -12,11 +12,20 @@ Gives you "one click binds" to buy weapons/equipment or use radio commands, and 
 
 Due to most servers on CS:GO using the command `sv_pure 1` the file `mouse_keyboard_options.txt` that is customised to allow you to bind your controls through the control screen is flagged if it not the standard file, so you need to use the custom file and bind your controls then change it back to the standard file. For Windows users I have created batch file `@custom-controls-menu.bat` that does this for you in the `cfg` folder. All you simply do is when you install the script, run `@custom-controls-menu.bat` in the `cfg` folder go into CS:GO, bind your controls, exit CS:GO and run the script `@custom-controls-menu.bat` again and it restores the original `mouse_keyboard_options.txt` file and away you go!
 
+## In-game help
+
+Type `kus_help` in console to see available key codes and commands so you can make binds quickly in-game.
+
+## Changelog
+
+- 0.2 2013-07-14 Add console help command
+- 0.1 2013-04-27 Initial release
+
 ## Installation
 
 ### Windows
 
-1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip) and extract the contents of the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive\csgo` folder, generally something like `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo`
+1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip) and extract to your desktop and copy the `cfg` and `scripts` folder from the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive\csgo` folder, generally something like `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo`
 - Run `@custom-controls-menu.bat` in the `Counter-Strike Global Offensive\csgo\cfg` folder to setup the custom controls menu
 - Bind your controls
 - Exit CS:GO (I have found that alt-tabing can cause the server to still kick you for sv_pure 1, so best to exit and restart CS:GO)
@@ -26,7 +35,7 @@ If you want to change your binds later on, simply repeat Step 2 onwards again.
 
 ### Mac/Linux
 
-1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip) and extract the contents of the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive/csgo` folder, generally something like `~/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo`
+1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip)  and extract to your desktop and copy the `cfg` and `scripts` folder from the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive/csgo` folder, generally something like `~/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo`
 - Copy `mouse_keyboard_options.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options_ORIGINAL.txt`, overwrite if prompted
 - Copy `mouse_keyboard_options_KUS.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options.txt`, overwrite if prompted
 - Bind your controls
@@ -39,7 +48,7 @@ If you want to change your binds later on, simply repeat Step 2 onwards again.
 
 Copyright (c) 2013 Blake Kus [blakek.us](http://blakek.us)
 
-This plugin is dual licenced under MIT and GPL Version 2 licences. 
+This plugin is dual licenced under MIT and GPL Version 2 licences.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
