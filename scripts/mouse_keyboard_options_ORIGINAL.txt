@@ -149,16 +149,6 @@
 		"type"			"bind"
 	}
 	
-	"Move Right"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_MoveRight"
-		"command"		"+moveright"
-		"priority"		"2103"
-		"type"			"bind"
-	}
-	
 	"Move Left"
 	{
 		"control"		"1"
@@ -169,43 +159,113 @@
 		"type"			"bind"
 	}
 	
+	"Move Right"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_MoveRight"
+		"command"		"+moveright"
+		"priority"		"2103"
+		"type"			"bind"
+	}
+
+	"Bind Jump"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_Jump"
+		"command"		"+jump"
+		"priority"		"2201"
+		"type"			"bind"
+	}
+
+	"Bind Duck"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_Duck"
+		"command"		"+duck"
+		"priority"		"2202"
+		"type"			"bind"
+	}
+
+	"Bind Fire"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_Fire"
+		"command"		"+attack"
+		"priority"		"2300"
+		"type"			"bind"
+	}
+
+	"Bind Weapon Special"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_WeaponSpecial"
+		"command"		"+attack2"
+		"priority"		"2301"
+		"type"			"bind"
+	}
+	
+	"Bind Reload"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_Reload_Weapon"
+		"command"		"+reload"
+		"priority"		"2302"
+		"type"			"bind"
+	}
+	
+	"Previous Weapon"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_PreviousWeapon"
+		"command"		"invprev"
+		"priority"		"2302"
+		"type"			"bind"
+	}
+	
+	"Next Weapon"
+	{
+		"control"		"1"
+
+		"name"			"#SFUI_NextWeapon"
+		"command"		"invnext"
+		"priority"		"2303"
+		"type"			"bind"
+	}
+
 	"Last Weapon Used"
 	{
 		"control"		"1"
 
 		"name"			"#SFUI_Previous"
 		"command"		"lastinv"
-		"priority"		"2303"
+		"priority"		"2304"
 		"type"			"bind"
 	}
 	
-	 "Buy"
+	"Bind Drop Weapon"
 	{
 		"control"		"1"
 
-		"name"			"#SFUI_Buy"
-		"command"		"buymenu"
-		"priority"		"2699"
+		"name"			"#SFUI_Drop_Weapon"
+		"command"		"drop"
+		"priority"		"2400"
 		"type"			"bind"
 	}
-	
-	"Autobuy"
+
+	"Look At Weapon"
 	{
 		"control"		"1"
 
-		"name"			"#SFUI_Autobuy"
-		"command"		"autobuy"
-		"priority"		"2700"
-		"type"			"bind"
-	}
-	
-	"Rebuy"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Rebuy"
-		"command"		"rebuy"
-		"priority"		"2701"
+		"name"			"#SFUI_LookAtWeapon"
+		"command"		"+lookatweapon"
+		"priority"		"2500"
 		"type"			"bind"
 	}
 
@@ -269,74 +329,33 @@
 		"type"			"bind"
 	}
 
-	"Bind Fire"
+	 "Buy"
 	{
 		"control"		"1"
 
-		"name"			"#SFUI_Fire"
-		"command"		"+attack"
-		"priority"		"2300"
-		"type"			"bind"
-	}
-
-	"Bind Weapon Special"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_WeaponSpecial"
-		"command"		"+attack2"
-		"priority"		"2301"
+		"name"			"#SFUI_Buy"
+		"command"		"buymenu"
+		"priority"		"2699"
 		"type"			"bind"
 	}
 	
-	"Bind Reload"
+	"Autobuy"
 	{
 		"control"		"1"
 
-		"name"			"#SFUI_Reload_Weapon"
-		"command"		"+reload"
-		"priority"		"2302"
+		"name"			"#SFUI_Autobuy"
+		"command"		"autobuy"
+		"priority"		"2700"
 		"type"			"bind"
 	}
 	
-	"Previous Weapon"
+	"Rebuy"
 	{
 		"control"		"1"
 
-		"name"			"#SFUI_PreviousWeapon"
-		"command"		"invprev"
-		"priority"		"2302"
-		"type"			"bind"
-	}
-	
-	"Next Weapon"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_NextWeapon"
-		"command"		"invnext"
-		"priority"		"2302"
-		"type"			"bind"
-	}
-
-
-	"Bind Jump"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Jump"
-		"command"		"+jump"
-		"priority"		"2201"
-		"type"			"bind"
-	}
-
-	"Bind Duck"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Duck"
-		"command"		"+duck"
-		"priority"		"2202"
+		"name"			"#SFUI_Rebuy"
+		"command"		"rebuy"
+		"priority"		"2701"
 		"type"			"bind"
 	}
 
@@ -367,16 +386,6 @@
 		"name"			"#SFUI_Walk"
 		"command"		"+speed"
 		"priority"		"2200"
-		"type"			"bind"
-	}
-
-	"Bind Drop Weapon"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Drop_Weapon"
-		"command"		"drop"
-		"priority"		"2400"
 		"type"			"bind"
 	}
 
