@@ -1,12 +1,12 @@
-# Kus' Counter-Strike: Global Offensive Buy Script v0.3
+# Kus' Counter-Strike: Global Offensive Buy Script v0.4
 
 ## What does it do?
 
 Gives you "one click binds" to buy weapons/equipment or use radio commands, and allows you to set the binds up through CS:GO controls menu so you don't have to manually edit your config.cfg or bind them through console. It works the same way most buy scripts worked on CS1.6 and CS:S where you could bind them through the controls screen.
 
-![Custom controls menu](https://raw.github.com/kus/csgo-buy-script/master/screenshots/custom-controls-menu.jpg "Custom controls menu")
+![CS:GO Custom controls menu](https://raw.github.com/kus/csgo-buy-script/master/screenshots/custom-controls-menu.jpg "CS:GO Custom controls menu")
 
-![Bind through GUI](https://raw.github.com/kus/csgo-buy-script/master/screenshots/bind-through-gui.jpg "Bind through GUI")
+![CS:GO buy script GUI](https://raw.github.com/kus/csgo-buy-script/master/screenshots/bind-through-gui.jpg "CS:GO buy script GUI")
 
 ## Important
 
@@ -18,6 +18,7 @@ Type `kus_help` in console to see available key codes and commands so you can ma
 
 ## Changelog
 
+- 0.4 2014-02-21 Add CZ75-Auto, add bash install script
 - 0.3 2013-11-08 Update armour buy command
 - 0.2 2013-07-14 Add console help command
 - 0.1 2013-04-27 Initial release
@@ -27,21 +28,20 @@ Type `kus_help` in console to see available key codes and commands so you can ma
 ### Windows
 
 1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip) and extract to your desktop and copy the `cfg` and `scripts` folder from the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive\csgo` folder, generally something like `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo`
-- Run `@custom-controls-menu.bat` in the `Counter-Strike Global Offensive\csgo\cfg` folder to setup the custom controls menu
-- Bind your controls
+- Run `@install-gui-win.bat` in the `Counter-Strike Global Offensive\csgo\cfg` folder to setup the custom controls menu
+- Go into CS:GO and bind your controls through the controls menu
 - Exit CS:GO (I have found that alt-tabing can cause the server to still kick you for sv_pure 1, so best to exit and restart CS:GO)
-- Run `@custom-controls-menu.bat` in the `cfg` folder again to restore the standard controls menu
+- Run `@install-gui-win.bat` in the `cfg` folder again to restore the standard controls menu
 
 If you want to change your binds later on, simply repeat Step 2 onwards again.
 
 ### Mac/Linux
 
-1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip)  and extract to your desktop and copy the `cfg` and `scripts` folder from the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive/csgo` folder, generally something like `~/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo`
-- Copy `mouse_keyboard_options.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options_ORIGINAL.txt`, overwrite if prompted
-- Copy `mouse_keyboard_options_KUS.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options.txt`, overwrite if prompted
-- Bind your controls
+1. [Download](https://github.com/kus/csgo-buy-script/archive/master.zip) and extract to your desktop and copy the `cfg` and `scripts` folder from the `csgo-buy-script-master` folder to your `Counter-Strike Global Offensive/csgo` folder, generally something like `~/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo`
+- Run `@install-gui-mac-linux` in the `Counter-Strike Global Offensive\csgo\cfg` folder to setup the custom controls menu
+- Go into CS:GO and bind your controls through the controls menu
 - Exit CS:GO (I have found that alt-tabing can cause the server to still kick you for sv_pure 1, so best to exit and restart CS:GO)
-- Copy `mouse_keyboard_options_ORIGINAL.txt` in the `Counter-Strike Global Offensive\csgo\scripts` folder to `mouse_keyboard_options.txt`, overwrite if prompted
+- Run `@install-gui-mac-linux` in the `cfg` folder again to restore the standard controls menu
 
 If you want to change your binds later on, simply repeat Step 2 onwards again.
 

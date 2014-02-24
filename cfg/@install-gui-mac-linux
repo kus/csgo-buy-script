@@ -1,0 +1,38 @@
+# Kus' Counter-Strike: Global Offensive Script v0.4
+# http://blakek.us
+# Twitter: @blakekus
+# Contribute on github: http://github.com/kus/csgo-buy-script
+
+PATH='../scripts/'
+FILE_NAME='mouse_keyboard_options.txt'
+FILE_KUS_NAME='mouse_keyboard_options_KUS.txt'
+FILE_ORIG_NAME='mouse_keyboard_options_ORIGINAL.txt'
+
+if ! [[ -e "$PATH$FILE_NAME" ]]; then
+	echo "Error, can't find csgo\scripts\$FILE_NAME did you extract this to the correct directory?"
+fi
+if ! [[ -e "$PATH$FILE_KUS_NAME" ]]; then
+	echo "Error, can't find csgo\scripts\$FILE_KUS_NAME did you extract this to the correct directory?"
+fi
+
+if /usr/bin/grep -Fq "Kus" "$PATH$FILE_NAME"
+then
+	echo "Found"
+	if ! [[ -e "$PATH$FILE_ORIG_NAME" ]]; then
+		echo "Error, can't find csgo\scripts\$FILE_ORIG_NAME, it should be created when you first run this script."
+		exit
+	fi
+	/bin/cp -pPR $PATH$FILE_ORIG_NAME $PATH$FILE_NAME
+	/usr/bin/clear
+	echo "Default control menu restored!"
+	echo "You can play on servers with sv_pure 1 or above."
+	echo "If you want to change a binding later on, come back run this script change them then run it again."
+else
+	echo "Not found"
+	/bin/cp -pPR $PATH$FILE_NAME $PATH$FILE_ORIG_NAME
+	/bin/cp -pPR $PATH$FILE_KUS_NAME $PATH$FILE_NAME
+	/usr/bin/clear
+	echo "Custom control menu set!"
+	echo "Please go into CS:GO and set your controls."
+	echo "Once you have set your controls, exit CS:GO and run this script to restore the default $FILE_NAME so you can play on servers that have sv_pure 1 or above!"
+fi

@@ -533,7 +533,7 @@
 		"devonly"		"1"
 	}
 
-	// Kus' Counter-Strike: Global Offensive Script v0.2
+	// Kus' Counter-Strike: Global Offensive Script v0.4
 	// http://blakek.us
 	// Twitter: @blakekus
 	// Contribute on github: http://github.com/kus/csgo-buy-script
@@ -542,7 +542,7 @@
 	"blank"
 	{
 		"control"		"1"
-		"name"			"== Kus' CSGO Script v0.2 =="
+		"name"			"== Kus' CSGO Script v0.4 =="
 		"convar"		""
 		"priority"		"1"
 		"type"			"choice"
@@ -677,6 +677,15 @@
 		"name"			"		Buy P2000 (replaces USP) / Tec-9"
 		"command"		"buyteampistol"
 		"priority"		"4116"
+		"type"			"bind"
+	}
+
+	"CZ75-Auto"
+	{
+		"control"		"1"
+		"name"			"		Buy CZ75-Auto"
+		"command"		"buycz75a"
+		"priority"		"4117"
 		"type"			"bind"
 	}
 	

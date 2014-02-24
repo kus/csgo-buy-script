@@ -1,4 +1,4 @@
-REM Kus' Counter-Strike: Global Offensive Script v0.1
+REM Kus' Counter-Strike: Global Offensive Script v0.4
 REM http://blakek.us
 REM Twitter: @blakekus
 REM Contribute on github: http://github.com/kus/csgo-buy-script
