@@ -1,4 +1,4 @@
-# Kus' Counter-Strike: Global Offensive Buy Script v0.4
+# Kus' Counter-Strike: Global Offensive Buy Script v0.4.1
 
 ## What does it do?
 
@@ -18,6 +18,7 @@ Type `kus_help` in console to see available key codes and commands so you can ma
 
 ## Changelog
 
+- 0.4.1 2015-01-02 Fix crash from controls being too long, Fix line endings for Windows
 - 0.4 2014-02-21 Add CZ75-Auto, add bash install script
 - 0.3 2013-11-08 Update armour buy command
 - 0.2 2013-07-14 Add console help command

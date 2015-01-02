@@ -4,536 +4,7 @@
 // CONTROLLER OPTIONS
 //
 
-	"Reverse Mouse"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_ReverseMouse"
-		"convar"		"m_pitch"
-		"priority"		"2000"
-		"type"			"choice"
-		"choices"
-		{
-			"#SFUI_Off"	"0.022"
-			"#SFUI_On"	"-0.022"
-		}
-	}
-
-	"Duck Mode"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_JoystickDuckMode"
-		"convar"		"option_duck_method"
-		"priority"		"2001"
-		"type"			"choice"
-		"choices"
-		{
-			"#SFUI_Hold"		"0"
-			"#SFUI_Toggle"	"1"
-		}
-	}
-
-	"Speed Mode"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_JoystickSpeedMode"
-		"convar"		"option_speed_method"
-		"priority"		"2002"
-		"type"			"choice"
-		"choices"
-		{
-			"#SFUI_Hold"		"0"
-			"#SFUI_Toggle"	"1"
-		}
-	}
-
-	"Mouse Sensitivity"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_MouseSensitivity"
-		"convar"		"sensitivity"
-		"priority"		"2003"
-		"type"			"slider"
-		"customrange"	"1"
-		"minvalue"		"1"
-		"maxvalue"		"20"
-	}
-
-	"Zoom Sensitivity"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_MouseZoomSensitivity"
-		"convar"		"zoom_sensitivity_ratio_mouse"
-		"priority"		"2004"
-		"type"			"slider"
-		"customrange"		"1"
-		"minvalue"		"0.1"
-		"maxvalue"		"1.0"
-	}
-	
-	"Raw Input"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_RawInput"
-		"convar"		"m_rawinput"
-		"priority"		"2005"
-		"type"			"choice"
-		"choices"
-		{
-			"#SFUI_On"	"1"
-			"#SFUI_Off"	"0"
-		}
-	}
-	
-	"Mouse Acceleration"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_MouseAcceleration"
-		"convar"		"m_customaccel"
-		"priority"		"2006"
-		"type"			"choice"
-		"choices"
-		{
-			"#SFUI_On"	"3"
-			"#SFUI_Off"	"0"
-		}
-	}
-	
-	"Acceleration Amount"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_AccelerationAmount"
-		"convar"		"m_customaccel_exponent"
-		"priority"		"2007"
-		"type"			"slider"
-		"customrange"	"1"
-		"minvalue"		"1.0"
-		"maxvalue"		"1.4"
-	}
-	
-
-	"Show Loadout"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Toggle_Always_Show_Inv"
-		"command"		"show_loadout_toggle"
-		"priority"		"2090"
-		"type"			"bind"
-	}
-	
-	"Move Forward"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Forward"
-		"command"		"+forward"
-		"priority"		"2100"
-		"type"			"bind"
-	}
-	
-	"Move Backward"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Backward"
-		"command"		"+back"
-		"priority"		"2101"
-		"type"			"bind"
-	}
-	
-	"Move Right"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_MoveRight"
-		"command"		"+moveright"
-		"priority"		"2103"
-		"type"			"bind"
-	}
-	
-	"Move Left"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_MoveLeft"
-		"command"		"+moveleft"
-		"priority"		"2102"
-		"type"			"bind"
-	}
-	
-	"Last Weapon Used"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Previous"
-		"command"		"lastinv"
-		"priority"		"2303"
-		"type"			"bind"
-	}
-	
-	 "Buy"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Buy"
-		"command"		"buymenu"
-		"priority"		"2699"
-		"type"			"bind"
-	}
-	
-	"Autobuy"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Autobuy"
-		"command"		"autobuy"
-		"priority"		"2700"
-		"type"			"bind"
-	}
-	
-	"Rebuy"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Rebuy"
-		"command"		"rebuy"
-		"priority"		"2701"
-		"type"			"bind"
-	}
-
-	"Command Radio"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_CommandRadio"
-		"command"		"radio1"
-		"priority"		"2550"
-		"type"			"bind"
-	}
-	
-	"Standard Radio"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_StandardRadio"
-		"command"		"radio2"
-		"priority"		"2551"
-		"type"			"bind"
-	}
-	
-	"Report Radio"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_ReportRadio"
-		"command"		"radio3"
-		"priority"		"2552"
-		"type"			"bind"
-	}
-	
-	"Chat Message"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_ChatMessage"
-		"command"		"messagemode"
-		"priority"		"2560"
-		"type"			"bind"
-	}
-	
-	"Team Message"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_TeamMessage"
-		"command"		"messagemode2"
-		"priority"		"2560"
-		"type"			"bind"
-	}
-	
-	"Voice"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Voice"
-		"command"		"+voicerecord"
-		"priority"		"2600"
-		"type"			"bind"
-	}
-
-	"Bind Fire"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Fire"
-		"command"		"+attack"
-		"priority"		"2300"
-		"type"			"bind"
-	}
-
-	"Bind Weapon Special"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_WeaponSpecial"
-		"command"		"+attack2"
-		"priority"		"2301"
-		"type"			"bind"
-	}
-	
-	"Bind Reload"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Reload_Weapon"
-		"command"		"+reload"
-		"priority"		"2302"
-		"type"			"bind"
-	}
-	
-	"Previous Weapon"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_PreviousWeapon"
-		"command"		"invprev"
-		"priority"		"2302"
-		"type"			"bind"
-	}
-	
-	"Next Weapon"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_NextWeapon"
-		"command"		"invnext"
-		"priority"		"2302"
-		"type"			"bind"
-	}
-
-
-	"Bind Jump"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Jump"
-		"command"		"+jump"
-		"priority"		"2201"
-		"type"			"bind"
-	}
-
-	"Bind Duck"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Duck"
-		"command"		"+duck"
-		"priority"		"2202"
-		"type"			"bind"
-	}
-
-	"Bind Use"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Pickup_Use_Objects"
-		"command"		"+use"
-		"priority"		"2500"
-		"type"			"bind"
-	}
-
-	"Bind Show Scores"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_TitlesTXT_Menu_Scoreboard"
-		"command"		"+showscores"
-		"priority"		"2800"
-		"type"			"bind"
-	}
-
-	"Bind Walk"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Walk"
-		"command"		"+speed"
-		"priority"		"2200"
-		"type"			"bind"
-	}
-
-	"Bind Drop Weapon"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_Drop_Weapon"
-		"command"		"drop"
-		"priority"		"2400"
-		"type"			"bind"
-	}
-
-	"Bind Primary Weapon"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_PrimaryWeapon"
-		"command"		"slot1"
-		"priority"		"2901"
-		"type"			"bind"
-	}
-
-	"Bind Secondary Weapon"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_SecondaryWeapon"
-		"command"		"slot2"
-		"priority"		"2902"
-		"type"			"bind"
-	}
-
-	"Bind Knife"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_KnifeSlot"
-		"command"		"slot3"
-		"priority"		"2903"
-		"type"			"bind"
-	}
-
-	"Bind Grenades"
-	{
-		"control"		"1"
-		"name"			"#SFUI_CycleGrenades"
-		"command"		"slot4"
-		"priority"		"2904"
-		"type"			"bind"
-	}
-	
-	"Bind Bomb"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_BombSlot"
-		"command"		"slot5"
-		"priority"		"2905"
-		"type"			"bind"
-	}
-		
-	"Bind HE Grenade"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_TitlesTXT_HE_Grenade"
-		"command"		"slot6"
-		"priority"		"2906"
-		"type"			"bind"
-	}
-
-	"Bind Flashbang"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_TitlesTXT_Flashbang"
-		"command"		"slot7"
-		"priority"		"2907"
-		"type"			"bind"
-	}
-
-	"Bind Smoke Grenade"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_TitlesTXT_Smoke_Grenade"
-		"command"		"slot8"
-		"priority"		"2908"
-		"type"			"bind"
-	}
-
-	"Bind Decoy"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_DecoySlot"
-		"command"		"slot9"
-		"priority"		"2909"
-		"type"			"bind"
-	}
-
-	"Bind Molotov"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_MolotovSlot"
-		"command"		"slot10"
-		"priority"		"2910"
-		"type"			"bind"
-	}
-
-	"Bind Taser"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_TaserSlot"
-		"command"		"slot11"
-		"priority"		"2911"
-		"type"			"bind"
-	}
-
-	// only used on the scoreboard?
-	// hardcoded it because the code that translates the client command isn't consistent and
-	// sometimes it'll show "mute" instead of the bind and we're going to make it clickable soon anyway
-	//"Bind Mute"
-	//{
-	//	"control"		"1"
-	//
-	//	"name"			"#SFUI_MuteBind"
-	//	"command"		"mute"
-	//	"priority"		"2912"
-	//	"type"			"bind"
-	//}
-
-	"Bind Vote"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_CallVote"
-		"command"		"callvote"
-		"priority"		"2913"
-		"type"			"bind"
-	}
-
-	"Bind Choose Team"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_ChooseTeam"
-		"command"		"teammenu"
-		"priority"		"2914"
-		"type"			"bind"
-	}
-
-	"Bind Console"
-	{
-		"control"		"1"
-
-		"name"			"#SFUI_ToggleConsole"
-		"command"		"toggleconsole"
-		"priority"		"2920"
-		"type"			"bind"
-		"devonly"		"1"
-	}
-
-	// Kus' Counter-Strike: Global Offensive Script v0.4
+	// Kus' Counter-Strike: Global Offensive Script v0.4.1
 	// http://blakek.us
 	// Twitter: @blakekus
 	// Contribute on github: http://github.com/kus/csgo-buy-script
@@ -542,7 +13,7 @@
 	"blank"
 	{
 		"control"		"1"
-		"name"			"== Kus' CSGO Script v0.4 =="
+		"name"			"== Kus' CSGO Script v0.4.1 =="
 		"convar"		""
 		"priority"		"1"
 		"type"			"choice"
@@ -553,29 +24,20 @@
 			"http://github.com/kus/csgo-buy-script"	"0"
 		}
 	}
-
-	"blank"
-	{
-		"control"		"1"
-		"name"			"== Kus' CSGO Script Controls =="
-		"command"		""
-		"priority"		"4000"
-		"type"			"bind"
-	}
 	
+	// "blank"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"Quick switch"
+	// 	"command"		""
+	// 	"priority"		"4001"
+	// 	"type"			"bind"
+	// }
+	// 
 	"blank"
 	{
 		"control"		"1"
-		"name"			"Quick switch"
-		"command"		""
-		"priority"		"4001"
-		"type"			"bind"
-	}
-	
-	"blank"
-	{
-		"control"		"1"
-		"name"			"    Knife/Primary"
+		"name"			"Quick switch: Knife/Best weapon"
 		"command"		"knifeswitch"
 		"priority"		"4002"
 		"type"			"bind"
@@ -584,25 +46,25 @@
 	"blank"
 	{
 		"control"		"1"
-		"name"			"    Pistol/Primary"
+		"name"			"Quick switch: Pistol/Primary"
 		"command"		"pistolswitch"
 		"priority"		"4003"
 		"type"			"bind"
 	}
 	
+	// "blank"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"Toggles"
+	// 	"command"		""
+	// 	"priority"		"4004"
+	// 	"type"			"bind"
+	// }
+	// 
 	"blank"
 	{
 		"control"		"1"
-		"name"			"Toggles"
-		"command"		""
-		"priority"		"4004"
-		"type"			"bind"
-	}
-	
-	"blank"
-	{
-		"control"		"1"
-		"name"			"	Walking/Running"
+		"name"			"Toggle Walking/Running"
 		"command"		"walk_toggle"
 		"priority"		"4005"
 		"type"			"bind"
@@ -617,20 +79,20 @@
 		"type"			"bind"
 	}
 	
-	"Pistols Group"
+	// "Pistols Group"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Pistols"
+	// 	"command"		""
+	// 	"priority"		"4110"
+	// 	"type"			"bind"
+	// }
+	// 
+	"Glock18 P2000 USPS"
 	{
 		"control"		"1"
-		"name"			"	Pistols"
-		"command"		""
-		"priority"		"4110"
-		"type"			"bind"
-	}
-
-	"Glock 18"
-	{
-		"control"		"1"
-		"name"			"		Buy Glock 18"
-		"command"		"buyglock"
+		"name"			"	Buy Glock 18 / P2000 / USP-S"
+		"command"		"buyteampistolstock"
 		"priority"		"4111"
 		"type"			"bind"
 	}
@@ -638,25 +100,16 @@
 	"P250"
 	{
 		"control"		"1"
-		"name"			"		Buy P250 (replaces P228)"
+		"name"			"	Buy P250"
 		"command"		"buyp250"
 		"priority"		"4112"
-		"type"			"bind"
-	}
-
-	"Five-SeveN"
-	{
-		"control"		"1"
-		"name"			"		Buy Five-SeveN"
-		"command"		"buyfiveseven"
-		"priority"		"4113"
 		"type"			"bind"
 	}
 
 	"Desert Eagle"
 	{
 		"control"		"1"
-		"name"			"		Buy Desert Eagle"
+		"name"			"	Buy Desert Eagle"
 		"command"		"buydeagle"
 		"priority"		"4114"
 		"type"			"bind"
@@ -665,43 +118,35 @@
 	"Dual Berettas"
 	{
 		"control"		"1"
-		"name"			"		Buy Dual Berettas"
+		"name"			"	Buy Dual Berettas"
 		"command"		"buyelite"
 		"priority"		"4115"
 		"type"			"bind"
 	}
 
-	"P2000 Tec-9"
+	"Tec9 FiveSeveN CZ75Auto"
 	{
 		"control"		"1"
-		"name"			"		Buy P2000 (replaces USP) / Tec-9"
+		"name"			"	Buy Tec-9 / Five-SeveN / CZ75-Auto"
 		"command"		"buyteampistol"
 		"priority"		"4116"
 		"type"			"bind"
 	}
 
-	"CZ75-Auto"
-	{
-		"control"		"1"
-		"name"			"		Buy CZ75-Auto"
-		"command"		"buycz75a"
-		"priority"		"4117"
-		"type"			"bind"
-	}
 	
-	"Shotguns Group"
-	{
-		"control"		"1"
-		"name"			"	Shotguns"
-		"command"		""
-		"priority"		"4120"
-		"type"			"bind"
-	}
-
+	// "Shotguns Group"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Shotguns"
+	// 	"command"		""
+	// 	"priority"		"4120"
+	// 	"type"			"bind"
+	// }
+	// 
 	"Nova"
 	{
 		"control"		"1"
-		"name"			"		Buy Nova (replaces M3)"
+		"name"			"	Buy Nova"
 		"command"		"buynova"
 		"priority"		"4121"
 		"type"			"bind"
@@ -710,7 +155,7 @@
 	"XM1014"
 	{
 		"control"		"1"
-		"name"			"		Buy XM1014"
+		"name"			"	Buy XM1014"
 		"command"		"buyxm1014"
 		"priority"		"4122"
 		"type"			"bind"
@@ -719,25 +164,25 @@
 	"MAG-7 Sawed-Off"
 	{
 		"control"		"1"
-		"name"			"		Buy MAG-7 / Sawed-Off"
+		"name"			"	Buy MAG-7 / Sawed-Off"
 		"command"		"buyteamshotgun"
 		"priority"		"4123"
 		"type"			"bind"
 	}
 	
-	"Submachine Guns Group"
-	{
-		"control"		"1"
-		"name"			"	Submachine Guns"
-		"command"		""
-		"priority"		"4130"
-		"type"			"bind"
-	}
+	// "Submachine Guns Group"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Submachine Guns"
+	// 	"command"		""
+	// 	"priority"		"4130"
+	// 	"type"			"bind"
+	// }
 
 	"MP9 MAC-10"
 	{
 		"control"		"1"
-		"name"			"		Buy MP9 (replaces TMP) / MAC-10"
+		"name"			"	Buy MP9 / MAC-10"
 		"command"		"buyteamsmg"
 		"priority"		"4131"
 		"type"			"bind"
@@ -746,7 +191,7 @@
 	"MP7"
 	{
 		"control"		"1"
-		"name"			"		Buy MP7 (replaces MP5)"
+		"name"			"	Buy MP7"
 		"command"		"buymp7"
 		"priority"		"4132"
 		"type"			"bind"
@@ -755,7 +200,7 @@
 	"UMP-45"
 	{
 		"control"		"1"
-		"name"			"		Buy UMP-45"
+		"name"			"	Buy UMP-45"
 		"command"		"buyump45"
 		"priority"		"4133"
 		"type"			"bind"
@@ -764,7 +209,7 @@
 	"P90"
 	{
 		"control"		"1"
-		"name"			"		Buy P90"
+		"name"			"	Buy P90"
 		"command"		"buyp90"
 		"priority"		"4134"
 		"type"			"bind"
@@ -773,25 +218,25 @@
 	"PP-Bizon"
 	{
 		"control"		"1"
-		"name"			"		Buy PP-Bizon"
+		"name"			"	Buy PP-Bizon"
 		"command"		"buybizon"
 		"priority"		"4135"
 		"type"			"bind"
 	}
 	
-	"Rifles Group"
-	{
-		"control"		"1"
-		"name"			"	Rifles"
-		"command"		""
-		"priority"		"4140"
-		"type"			"bind"
-	}
+	// "Rifles Group"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Rifles"
+	// 	"command"		""
+	// 	"priority"		"4140"
+	// 	"type"			"bind"
+	// }
 
 	"FAMAS Galil AR"
 	{
 		"control"		"1"
-		"name"			"		Buy FAMAS / Galil AR"
+		"name"			"	Buy FAMAS / Galil AR"
 		"command"		"buyteamlight"
 		"priority"		"4141"
 		"type"			"bind"
@@ -800,7 +245,7 @@
 	"M4A4 AK-47"
 	{
 		"control"		"1"
-		"name"			"		Buy M4A4 (replaces M4A1) / AK-47"
+		"name"			"	Buy M4A4 / M4A1-S / AK-47"
 		"command"		"buyteammedium"
 		"priority"		"4142"
 		"type"			"bind"
@@ -809,7 +254,7 @@
 	"SSG 08"
 	{
 		"control"		"1"
-		"name"			"		Buy SSG 08 (replaces Scout)"
+		"name"			"	Buy SSG 08 (Scout)"
 		"command"		"buyssg08"
 		"priority"		"4143"
 		"type"			"bind"
@@ -818,7 +263,7 @@
 	"AUG SG 553"
 	{
 		"control"		"1"
-		"name"			"		Buy AUG / SG 553 (replaces Krieg 552)"
+		"name"			"	Buy AUG / SG 553"
 		"command"		"buyteamheavy"
 		"priority"		"4144"
 		"type"			"bind"
@@ -827,7 +272,7 @@
 	"AWP"
 	{
 		"control"		"1"
-		"name"			"		Buy AWP"
+		"name"			"	Buy AWP"
 		"command"		"buyawp"
 		"priority"		"4145"
 		"type"			"bind"
@@ -836,25 +281,25 @@
 	"SCAR-20 G3SG1"
 	{
 		"control"		"1"
-		"name"			"		Buy SCAR-20 (replaces SG550) / G3SG1"
+		"name"			"	Buy SCAR-20 / G3SG1"
 		"command"		"buyteamsniper"
 		"priority"		"4146"
 		"type"			"bind"
 	}
 	
-	"Heavy Machine Guns Group"
-	{
-		"control"		"1"
-		"name"			"	Heavy Machine Guns"
-		"command"		""
-		"priority"		"4150"
-		"type"			"bind"
-	}
-
+	// "Heavy Machine Guns Group"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Heavy Machine Guns"
+	// 	"command"		""
+	// 	"priority"		"4150"
+	// 	"type"			"bind"
+	// }
+	// 
 	"M249"
 	{
 		"control"		"1"
-		"name"			"		Buy M249"
+		"name"			"	Buy M249"
 		"command"		"buym249"
 		"priority"		"4151"
 		"type"			"bind"
@@ -863,25 +308,25 @@
 	"Negev"
 	{
 		"control"		"1"
-		"name"			"		Buy Negev"
+		"name"			"	Buy Negev"
 		"command"		"buynegev"
 		"priority"		"4152"
 		"type"			"bind"
 	}
 	
-	"Equipment Group"
-	{
-		"control"		"1"
-		"name"			"	Equipment"
-		"command"		""
-		"priority"		"4160"
-		"type"			"bind"
-	}
-
+	// "Equipment Group"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Equipment"
+	// 	"command"		""
+	// 	"priority"		"4160"
+	// 	"type"			"bind"
+	// }
+	// 
 	"Affordable Kevlar Vest"
 	{
 		"control"		"1"
-		"name"			"		Buy Kevlar + Helmet, fallback Kevlar Vest"
+		"name"			"	Buy Kevlar + Helmet, fallback Kevlar Vest"
 		"command"		"buyarmor"
 		"priority"		"4161"
 		"type"			"bind"
@@ -890,25 +335,25 @@
 	"Kevlar Vest"
 	{
 		"control"		"1"
-		"name"			"		Buy Kevlar Vest"
+		"name"			"	Buy Kevlar Vest"
 		"command"		"buykevlar"
 		"priority"		"4162"
 		"type"			"bind"
 	}
 
-	"Kevlar Helmet"
-	{
-		"control"		"1"
-		"name"			"		Buy Kevlar + Helmet"
-		"command"		"buyassaultsuit"
-		"priority"		"4163"
-		"type"			"bind"
-	}
-
+	// "Kevlar Helmet"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"		Buy Kevlar + Helmet"
+	// 	"command"		"buyassaultsuit"
+	// 	"priority"		"4163"
+	// 	"type"			"bind"
+	// }
+	// 
 	"Zeus x27"
 	{
 		"control"		"1"
-		"name"			"		Buy Zeus x27 (taser)"
+		"name"			"	Buy Zeus x27 (taser)"
 		"command"		"buytaser"
 		"priority"		"4164"
 		"type"			"bind"
@@ -917,7 +362,7 @@
 	"Defuse Kit"
 	{
 		"control"		"1"
-		"name"			"		Buy Defuse Kit / Rescue Kit"
+		"name"			"	Buy Defuse Kit / Rescue Kit"
 		"command"		"buykit"
 		"priority"		"4165"
 		"type"			"bind"
@@ -926,7 +371,7 @@
 	"Primary ammo"
 	{
 		"control"		"1"
-		"name"			"		Buy Primary ammo"
+		"name"			"	Buy Primary ammo"
 		"command"		"buyprimammo"
 		"priority"		"4166"
 		"type"			"bind"
@@ -935,25 +380,25 @@
 	"Secondary ammo"
 	{
 		"control"		"1"
-		"name"			"		Buy Secondary ammo"
+		"name"			"	Buy Secondary ammo"
 		"command"		"buysecammo"
 		"priority"		"4167"
 		"type"			"bind"
 	}
 	
-	"Grenades Group"
-	{
-		"control"		"1"
-		"name"			"	Grenades"
-		"command"		""
-		"priority"		"4170"
-		"type"			"bind"
-	}
-
+	// "Grenades Group"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Grenades"
+	// 	"command"		""
+	// 	"priority"		"4170"
+	// 	"type"			"bind"
+	// }
+	// 
 	"Incendiary Grenade Molotov"
 	{
 		"control"		"1"
-		"name"			"		Buy Molotov / Incendiary Grenade"
+		"name"			"	Buy Molotov / Incendiary Grenade"
 		"command"		"buymolotov"
 		"priority"		"4171"
 		"type"			"bind"
@@ -962,7 +407,7 @@
 	"Decoy Grenade"
 	{
 		"control"		"1"
-		"name"			"		Buy Decoy Grenade"
+		"name"			"	Buy Decoy Grenade"
 		"command"		"buydecoy"
 		"priority"		"4172"
 		"type"			"bind"
@@ -971,7 +416,7 @@
 	"Flashbang"
 	{
 		"control"		"1"
-		"name"			"		Buy Flashbang"
+		"name"			"	Buy Flashbang"
 		"command"		"buyflashbang"
 		"priority"		"4173"
 		"type"			"bind"
@@ -980,7 +425,7 @@
 	"High Explosive Grenade"
 	{
 		"control"		"1"
-		"name"			"		Buy High Explosive Grenade"
+		"name"			"	Buy High Explosive Grenade"
 		"command"		"buyhegrenade"
 		"priority"		"4174"
 		"type"			"bind"
@@ -989,7 +434,7 @@
 	"Smoke Grenade"
 	{
 		"control"		"1"
-		"name"			"		Buy Smoke Grenade"
+		"name"			"	Buy Smoke Grenade"
 		"command"		"buysmokegrenade"
 		"priority"		"4175"
 		"type"			"bind"
@@ -1004,19 +449,19 @@
 		"type"			"bind"
 	}
 	
-	"Report Radio Message"
-	{
-		"control"		"1"
-		"name"			"	Report"
-		"command"		""
-		"priority"		"4220"
-		"type"			"bind"
-	}
-	
+	// "Report Radio Message"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Report"
+	// 	"command"		""
+	// 	"priority"		"4220"
+	// 	"type"			"bind"
+	// }
+	// 
 	"Enemy Spotted"
 	{
 		"control"		"1"
-		"name"			"		Enemy Spotted"
+		"name"			"	Enemy Spotted"
 		"command"		"enemyspot"
 		"priority"		"4221"
 		"type"			"bind"
@@ -1025,7 +470,7 @@
 	"Need Backup"
 	{
 		"control"		"1"
-		"name"			"		Need Backup"
+		"name"			"	Need Backup"
 		"command"		"needbackup"
 		"priority"		"4222"
 		"type"			"bind"
@@ -1034,7 +479,7 @@
 	"You Take the Point"
 	{
 		"control"		"1"
-		"name"			"		You Take the Point"
+		"name"			"	You Take the Point"
 		"command"		"takepoint"
 		"priority"		"4223"
 		"type"			"bind"
@@ -1043,7 +488,7 @@
 	"Sector Clear"
 	{
 		"control"		"1"
-		"name"			"		Sector Clear"
+		"name"			"	Sector Clear"
 		"command"		"sectorclear"
 		"priority"		"4224"
 		"type"			"bind"
@@ -1052,7 +497,7 @@
 	"Im in Position"
 	{
 		"control"		"1"
-		"name"			"		I'm in Position"
+		"name"			"	I'm in Position"
 		"command"		"inposition"
 		"priority"		"4225"
 		"type"			"bind"
@@ -1061,7 +506,7 @@
 	"Reporting In"
 	{
 		"control"		"1"
-		"name"			"		Reporting In"
+		"name"			"	Reporting In"
 		"command"		"reportingin"
 		"priority"		"4225"
 		"type"			"bind"
@@ -1070,7 +515,7 @@
 	"Enemy Down"
 	{
 		"control"		"1"
-		"name"			"		Enemy Down"
+		"name"			"	Enemy Down"
 		"command"		"enemydown"
 		"priority"		"4225"
 		"type"			"bind"
@@ -1079,25 +524,25 @@
 	"Taking Fire"
 	{
 		"control"		"1"
-		"name"			"		Taking Fire, Need Assistance"
+		"name"			"	Taking Fire, Need Assistance"
 		"command"		"takingfire"
 		"priority"		"4225"
 		"type"			"bind"
 	}
 	
-	"Command Radio Message"
-	{
-		"control"		"1"
-		"name"			"	Command"
-		"command"		""
-		"priority"		"4210"
-		"type"			"bind"
-	}
-	
+	// "Command Radio Message"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Command"
+	// 	"command"		""
+	// 	"priority"		"4210"
+	// 	"type"			"bind"
+	// }
+	// 
 	"GO"
 	{
 		"control"		"1"
-		"name"			"		GO"
+		"name"			"	GO"
 		"command"		"go"
 		"priority"		"4211"
 		"type"			"bind"
@@ -1106,7 +551,7 @@
 	"Fall Back"
 	{
 		"control"		"1"
-		"name"			"		Fall Back"
+		"name"			"	Fall Back"
 		"command"		"fallback"
 		"priority"		"4212"
 		"type"			"bind"
@@ -1115,7 +560,7 @@
 	"Cover Me"
 	{
 		"control"		"1"
-		"name"			"		Cover Me"
+		"name"			"	Cover Me"
 		"command"		"coverme"
 		"priority"		"4212"
 		"type"			"bind"
@@ -1124,7 +569,7 @@
 	"Stick Together Team"
 	{
 		"control"		"1"
-		"name"			"		Stick Together Team"
+		"name"			"	Stick Together Team"
 		"command"		"sticktog"
 		"priority"		"4213"
 		"type"			"bind"
@@ -1133,7 +578,7 @@
 	"Hold This Position"
 	{
 		"control"		"1"
-		"name"			"		Hold This Position"
+		"name"			"	Hold This Position"
 		"command"		"holdpos"
 		"priority"		"4214"
 		"type"			"bind"
@@ -1142,7 +587,7 @@
 	"Follow Me"
 	{
 		"control"		"1"
-		"name"			"		Follow Me"
+		"name"			"	Follow Me"
 		"command"		"followme"
 		"priority"		"4215"
 		"type"			"bind"
@@ -1151,7 +596,7 @@
 	"Regroup Team"
 	{
 		"control"		"1"
-		"name"			"		Regroup Team"
+		"name"			"	Regroup Team"
 		"command"		"regroup"
 		"priority"		"4215"
 		"type"			"bind"
@@ -1160,7 +605,7 @@
 	"Report In"
 	{
 		"control"		"1"
-		"name"			"		Report In"
+		"name"			"	Report In"
 		"command"		"report"
 		"priority"		"4215"
 		"type"			"bind"
@@ -1169,25 +614,25 @@
 	"Shes gonna Blow"
 	{
 		"control"		"1"
-		"name"			"		She's gonna Blow!"
+		"name"			"	She's gonna Blow!"
 		"command"		"getout"
 		"priority"		"4215"
 		"type"			"bind"
 	}
 	
-	"Standard Radio Message"
-	{
-		"control"		"1"
-		"name"			"	Standard"
-		"command"		""
-		"priority"		"4201"
-		"type"			"bind"
-	}
-	
+	// "Standard Radio Message"
+	// {
+	// 	"control"		"1"
+	// 	"name"			"	Standard"
+	// 	"command"		""
+	// 	"priority"		"4201"
+	// 	"type"			"bind"
+	// }
+	// 
 	"Affirmative Roger"
 	{
 		"control"		"1"
-		"name"			"		Affirmative/Roger"
+		"name"			"	Affirmative/Roger"
 		"command"		"roger"
 		"priority"		"4202"
 		"type"			"bind"
@@ -1196,7 +641,7 @@
 	"Negative"
 	{
 		"control"		"1"
-		"name"			"		Negative"
+		"name"			"	Negative"
 		"command"		"negative"
 		"priority"		"4203"
 		"type"			"bind"
@@ -1205,7 +650,7 @@
 	"Cheer"
 	{
 		"control"		"1"
-		"name"			"		Cheer!"
+		"name"			"	Cheer!"
 		"command"		"cheer"
 		"priority"		"4204"
 		"type"			"bind"
@@ -1214,7 +659,7 @@
 	"Compliment"
 	{
 		"control"		"1"
-		"name"			"		Compliment"
+		"name"			"	Compliment"
 		"command"		"compliment"
 		"priority"		"4205"
 		"type"			"bind"
@@ -1223,10 +668,9 @@
 	"Thanks"
 	{
 		"control"		"1"
-		"name"			"		Thanks"
+		"name"			"	Thanks"
 		"command"		"thanks"
 		"priority"		"4206"
 		"type"			"bind"
 	}
-	
 }

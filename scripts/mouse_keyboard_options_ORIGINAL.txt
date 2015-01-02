@@ -118,6 +118,20 @@
 		"maxvalue"		"1.4"
 	}
 	
+	"CATEGORY GAP"
+	{
+		"name"			""
+		"convar"		""
+		"priority"		"2088"
+		"type"			"category"
+	}
+	"CATEGORY"
+	{
+		"name"			"#GameUI_Category_KeyBindings"
+		"convar"		""
+		"priority"		"2089"
+		"type"			"category"
+	}
 
 	"Show Loadout"
 	{
